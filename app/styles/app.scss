@@ -7,9 +7,18 @@
 
 .calendar{
   border: solid rgb(0, 0, 0) 2px;
-  width: 45.7%;
+  width: 50%;
   margin: auto;
   background-color: rgb(255, 255, 255);
+
+
+}
+
+.calendar-gui{
+
+  margin: auto;
+  width: 92%;
+  padding-bottom: 3%;
 
 }
 
@@ -19,19 +28,24 @@
   padding-top: 3%;
   background-color: rgb(161, 224, 253);
   height: 730px;
+  
 
 
 }
 .demo-calendar-big {
   @include ember-power-calendar($cell-size: 70px);
 }
+
+.demo-calendar-medium {
+  @include ember-power-calendar($cell-size: 50px);
+}
+
 .demo-calendar-red {
   @include ember-power-calendar($cell-size: 40px, $primary-color: red);
 }
 
 .empty{
   width: 45.7%;
-  height: 30%;
   margin: auto;
 }
 
@@ -49,6 +63,10 @@
   margin-top: 2%;
 }
 
+.resized{
+
+
+}
 .selection{
 
   height: 50px;
