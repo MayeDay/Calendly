@@ -1,0 +1,17 @@
+<div class="selection">
+    <h3>{{date-formatter date=updated}}</h3>
+</div>
+
+<div class="empty">
+    <h1></h1>
+</div>
+<div class="calendar-gui">
+<PowerCalendar class="demo-calendar-big"
+    @selected={{selected}}
+    @center={{center}}
+    @onSelect={{action (mut updated) value="date"}} @onCenterChange={{action (mut center) value="date"}} as |calendar|>
+    <calendar.Nav/>
+    <calendar.Days/>
+</PowerCalendar>
+</div>
+
