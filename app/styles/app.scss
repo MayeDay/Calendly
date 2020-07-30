@@ -5,41 +5,57 @@
   padding: 0;
 }
 
-  .calendar{
-    border: solid rgb(0, 0, 0) 2px;
-    width: 45.7%;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
+.calendar{
+  border: solid rgb(0, 0, 0) 2px;
+  width: 45.7%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
 
-  }
+}
 
-  .container{
-    width: 100%;
-    margin: auto;
-    background-color: rgb(161, 224, 253);
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 3%;
+  background-color: rgb(161, 224, 253);
+  height: 730px;
 
 
-  }
-  .demo-calendar-big {
-    @include ember-power-calendar($cell-size: 70px);
-  }
-  .demo-calendar-red {
-    @include ember-power-calendar($cell-size: 40px, $primary-color: red);
-  }
+}
+.demo-calendar-big {
+  @include ember-power-calendar($cell-size: 70px);
+}
+.demo-calendar-red {
+  @include ember-power-calendar($cell-size: 40px, $primary-color: red);
+}
 
-  .empty{
-    width: 45.7%;
-    height: 30%;
-    margin: auto;
-  }
+.empty{
+  width: 45.7%;
+  height: 30%;
+  margin: auto;
+}
 
-  .selection{
+.main{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 730px;
+  background-image: url("https://wallpaper-house.com/data/out/6/wallpaper2you_115485.jpg");
+}
 
-    height: 50px;
-    text-align: center;
-    border-bottom: solid rgb(0, 0, 0) 2px;
+.main .container .h1{
 
-    font-family: sans-serif;
-    font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
 
-  }
+.selection{
+
+  height: 50px;
+  text-align: center;
+  border-bottom: solid rgb(0, 0, 0) 2px;
+
+  font-family: sans-serif;
+  font-weight: lighter;
+
+}
