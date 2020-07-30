@@ -13,7 +13,7 @@ export default helper(function dateFormatter(params, hash) {
   let year = date.getFullYear(),
       month = ('0' + (date.getMonth()+1)).slice(-2),
       day = ('0' + (date.getDate())).slice(-2),
-      formatted = `${month}-${day}-${year}`;
+      formatted = `${month}/${day}/${year}`;
 
   return formatted;
   return date;
